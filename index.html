@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+	<title>My_VUEjs_Tic-tac-toe</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="v_style.css" rel="stylesheet">
+	<link href="tailwind.css" rel="stylesheet">
+	<script src="vue.js"></script>
+   
+</head>
+<body class="text-center bg-black">
+  <ul id="example-1">
+  <li v-for="item in items" :key="item.message">
+    {{ item.message }}
+  </li>
+</ul>
+	<br>
+<center>
+<div id="ap" class="grid grid-cols-3 gap-4 myb">
+  <button id="b-1" class="btn-bg duration-500 ease-in-out bg-gray-600 hover:bg-white transform hover:scale-110 rounded-full" v-on:click="b1()" onclick="myFunction();this.disabled=true;"></button>
+  <button id="b-2" class="btn-bg duration-500 ease-in-out bg-gray-600 hover:bg-white transform hover:scale-110 rounded-full" onclick="myFunction2();this.disabled=true;"></button>
+  <button id="b-3" class="btn-bg duration-500 ease-in-out bg-gray-600 hover:bg-white transform hover:scale-110 rounded-full" onclick="myFunction3();this.disabled=true;"></button>
+  <button id="b-4" class="btn-bg duration-500 ease-in-out bg-gray-600 hover:bg-white transform hover:scale-110 rounded-full" onclick="myFunction4();this.disabled=true;"></button>
+  <button id="b-5" class="btn-bg duration-500 ease-in-out bg-gray-600 hover:bg-white transform hover:scale-110 rounded-full" onclick="myFunction5();this.disabled=true;"></button>
+  <button id="b-6" class="btn-bg duration-500 ease-in-out bg-gray-600 hover:bg-white transform hover:scale-110 rounded-full" onclick="myFunction6();this.disabled=true;"></button>
+  <button id="b-7" class="btn-bg duration-500 ease-in-out bg-gray-600 hover:bg-white transform hover:scale-110 rounded-full" onclick="myFunction7();this.disabled=true;"></button>
+  <button id="b-8" class="btn-bg duration-500 ease-in-out bg-gray-600 hover:bg-white transform hover:scale-110 rounded-full" onclick="myFunction8();this.disabled=true;"></button>
+  <button id="b-9" class="btn-bg duration-500 ease-in-out bg-gray-600 hover:bg-white transform hover:scale-110 rounded-full" onclick="myFunction9();this.disabled=true;"></button>
+</div>
+<br>
+<div class="wht" id="ani"> {{ message }} </div>
+</center><br>
+<div class="grid auto-rows-auto">
+<table id="playerX">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr v-for="row in rows">
+      <td>{{row.id}}</td>
+      <td>{{row.time}}</td>
+      <td>{{row.score}}</td>
+    </tr>
+  </tbody>
+</table>
+<table id="playerO">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr v-for="row in rows">
+      <td>{{row.id}}</td>
+      <td>{{row.time}}</td>
+      <td>{{row.score}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</body>
+<script src="v_script.js"></script>
+</html>
