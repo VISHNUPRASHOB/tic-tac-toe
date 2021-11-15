@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.myb{	
+			box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+			width: 300px;
+			height: 300px;
+
+}
+.mycnt{	
+			flex-direction: row;
+}
+.btn-bg{
+			background-color: antiquewhite;
+}
+.wht{
+	color: white;
+	font-size: 2rem;
+	line-height: 1rem;
+}
+
+.text-inherit {
+  color: inherit;
+}
+
+table {
+  font-family: 'Open Sans', sans-serif;
+  border-collapse: collapse;
+  border: 3px solid white;
+  margin: 10px 10px 0 10px;
+  max-width: 100%;
+  
+
+}
+
+table th {
+  text-transform: uppercase;
+  text-align: left;
+
+  background:black;
+  color: #FFF;
+  padding: 8px;
+  min-width: 30px;
+}
+
+table td {
+  text-align: left;
+  padding: 8px;
+  border-right: 2px solid white;
+  background: lightblue;
+}
+table td:last-child {
+  border-right: none;
+}
+table tbody tr:nth-child(2n) td {
+  background: whitesmoke;
+}
+
+    
